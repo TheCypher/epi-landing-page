@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPI Thermal Mass Flow Meters | Eldridge Products, Inc.</title>
+  <meta name="description" content="Thermal mass flow meters and switches for hazardous locations, high-purity lines, extreme temperatures and large ducts. Built and calibrated in Marina, California since 1988.">
+  <meta property="og:title" content="EPI Thermal Mass Flow Meters">
+  <meta property="og:description" content="Precise gas flow measurement, built in California since 1988.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1C4F8F">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231C4F8F'/%3E%3Cpath d='M6 12h20M6 16h20M6 20h20' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #F4F6F6;
+      --surface: #FFFFFF;
+      --ink: #13202A;
+      --steel: #56636D;
+      --rule: #D3DADE;
+      --blue: #1C4F8F;
+      --blue-hover: #163F73;
+      --on-blue: #FFFFFF;
+      --blue-soft: #E3EBF5;
+      --heat: #D2782C;
+      --pipe: #C9D1D6;
+      --band-bg: #13202A;
+      --band-fg: #F4F6F6;
+      --band-muted: #A9B5BE;
+      --band-rule: #2C3A46;
+
+      --font: "Archivo", "Helvetica Neue", Arial, system-ui, sans-serif;
+      --wrap: 1180px;
+      --gutter: clamp(20px, 4vw, 40px);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #10181F;
+        --surface: #17212A;
+        --ink: #E7ECEF;
+        --steel: #9AA7B1;
+        --rule: #2A3742;
+        --blue: #7FA8E0;
+        --blue-hover: #9DBDEA;
+        --on-blue: #0E1720;
+        --blue-soft: #1B2A3A;
+        --heat: #E8964F;
+        --pipe: #33424E;
+        --band-bg: #E7ECEF;
+        --band-fg: #13202A;
+        --band-muted: #4C5963;
+        --band-rule: #C3CCD2;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    a { color: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -60px;
+      background: var(--blue);
+      color: var(--on-blue);
+      padding: 10px 16px;
+      z-index: 100;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 12px; }
+
+    .wrap {
+      max-width: var(--wrap);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    /* ---------- Type ---------- */
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 600;
+      font-stretch: 110%;
+      letter-spacing: -0.015em;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+    h1 { font-size: clamp(2.3rem, 4.4vw, 3.6rem); letter-spacing: -0.025em; line-height: 1.02; }
+    h2 { font-size: clamp(1.85rem, 3.2vw, 2.7rem); }
+    h3 { font-size: 1.2rem; line-height: 1.25; }
+    p { margin: 0; }
+    .lede {
+      font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+      color: var(--steel);
+      max-width: 36em;
+    }
+
+    /* ---------- Buttons ---------- */
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      font: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1.5px solid transparent;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+    .btn-primary { background: var(--blue); color: var(--on-blue); }
+    .btn-primary:hover { background: var(--blue-hover); }
+    .btn-secondary { border-color: var(--ink); color: var(--ink); }
+    .btn-secondary:hover { background: var(--ink); color: var(--paper); }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: color-mix(in srgb, var(--paper) 92%, transparent);
+      backdrop-filter: saturate(1.4) blur(10px);
+      -webkit-backdrop-filter: saturate(1.4) blur(10px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 68px;
+    }
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .brand-mark {
+      font-weight: 800;
+      font-stretch: 125%;
+      font-size: 1.5rem;
+      letter-spacing: 0.02em;
+      color: var(--blue);
+    }
+    .brand-name { font-size: 0.9rem; color: var(--steel); }
+    .site-nav { display: flex; align-items: center; gap: 28px; }
+    .site-nav a.nav-link {
+      text-decoration: none;
+      font-size: 0.95rem;
+      color: var(--steel);
+    }
+    .site-nav a.nav-link:hover { color: var(--ink); }
+    .site-nav .btn { min-height: 40px; padding: 0 16px; font-size: 0.95rem; }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: clamp(48px, 8vw, 96px) 0 0; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: clamp(32px, 5vw, 72px);
+      align-items: center;
+    }
+    .hero-copy { display: grid; gap: 24px; }
+    .hero-copy .actions { margin-top: 8px; }
+
+    .flow-figure {
+      margin: 0;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 20px 20px 18px;
+    }
+    .flow-figure svg { width: 100%; height: auto; display: block; }
+    .readout {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      border-top: 1px solid var(--rule);
+      margin-top: 14px;
+      padding-top: 14px;
+    }
+    .readout-main { display: flex; align-items: baseline; gap: 10px; }
+    .readout-label { font-size: 0.85rem; color: var(--steel); }
+    .readout-value {
+      font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+      font-weight: 600;
+      font-stretch: 105%;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.01em;
+    }
+    .readout-unit { font-size: 0.95rem; color: var(--steel); }
+    .readout-gas { font-size: 0.85rem; color: var(--steel); }
+    .flow-figure figcaption {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: var(--steel);
+    }
+
+    /* SVG flow animation */
+    .stream {
+      fill: none;
+      stroke: var(--blue);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-dasharray: 30 16;
+      animation: flow var(--d, 1.2s) linear infinite;
+    }
+    @keyframes flow { to { stroke-dashoffset: -46; } }
+    .heat-glow { animation: glow 2.4s ease-in-out infinite; transform-origin: center; }
+    @keyframes glow { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.8; } }
+
+    .credentials {
+      margin-top: clamp(48px, 7vw, 80px);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+    .credentials ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .credentials li {
+      padding: 20px 0;
+      font-size: 0.98rem;
+      color: var(--steel);
+    }
+    .credentials li + li { padding-left: 24px; border-left: 1px solid var(--rule); }
+    .credentials strong { display: block; color: var(--ink); font-weight: 600; font-size: 1.05rem; }
+
+    /* ---------- Sections ---------- */
+    .section { padding: clamp(72px, 10vw, 128px) 0; }
+    .section-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(24px, 5vw, 72px);
+      align-items: end;
+      margin-bottom: clamp(36px, 5vw, 56px);
+    }
+    .section-head .lede { justify-self: start; }
+
+    /* Products */
+    .range-image {
+      margin: 0 0 clamp(28px, 4vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .range-image img { width: 100%; max-height: 360px; object-fit: contain; padding: 24px; }
+
+    .series-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+    .series {
+      display: grid;
+      grid-template-columns: 180px 1fr 220px 170px;
+      gap: 24px;
+      align-items: baseline;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .series-name {
+      font-weight: 700;
+      font-stretch: 125%;
+      font-size: 1.3rem;
+      letter-spacing: 0.01em;
+      color: var(--blue);
+    }
+    .series-name span { display: block; font-weight: 400; font-stretch: 100%; font-size: 0.85rem; letter-spacing: 0; color: var(--steel); margin-top: 2px; }
+    .series-desc { max-width: 34em; }
+    .series-sizes { font-size: 0.9rem; color: var(--steel); }
+    .series-link {
+      justify-self: end;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--blue);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+    .series-link:hover { text-decoration-thickness: 2px; }
+
+    .custom-note {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px 32px;
+      color: var(--steel);
+    }
+
+    /* Technology */
+    .tech { background: var(--surface); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(36px, 6vw, 88px);
+    }
+    .tech-item { display: grid; gap: 14px; align-content: start; }
+    .tech-item p { color: var(--steel); max-width: 34em; }
+    .tech-item svg { width: 100%; max-width: 440px; height: auto; margin-bottom: 8px; }
+    .tech-link {
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+      justify-self: start;
+    }
+
+    /* Quality */
+    .quality-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(36px, 6vw, 88px);
+      align-items: center;
+    }
+    .quality-photo {
+      margin: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      background: var(--surface);
+    }
+    .quality-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .quality-copy { display: grid; gap: 22px; }
+    .quality-copy > p { color: var(--steel); }
+    .facts { margin: 8px 0 0; display: grid; gap: 0; border-top: 1px solid var(--rule); }
+    .facts div { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 200px 1fr; gap: 16px; }
+    .facts dt { font-weight: 600; }
+    .facts dd { margin: 0; color: var(--steel); }
+
+    /* Testimonial */
+    .testimonial { padding-top: 0; }
+    .quote {
+      margin: 0;
+      max-width: 860px;
+      padding-left: clamp(20px, 3vw, 36px);
+      border-left: 3px solid var(--blue);
+    }
+    .quote p {
+      font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+      line-height: 1.4;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    .quote footer { margin-top: 18px; color: var(--steel); font-size: 0.95rem; }
+    .quote cite { font-style: normal; color: var(--ink); font-weight: 600; }
+
+    /* Contact band */
+    .band { background: var(--band-bg); color: var(--band-fg); }
+    .band .lede { color: var(--band-muted); }
+    .band .btn-primary { background: var(--band-fg); color: var(--band-bg); }
+    .band .btn-primary:hover { background: color-mix(in srgb, var(--band-fg) 85%, var(--band-bg)); }
+    .band .btn-secondary { border-color: var(--band-fg); color: var(--band-fg); }
+    .band .btn-secondary:hover { background: var(--band-fg); color: var(--band-bg); }
+    .band-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(40px, 6vw, 88px);
+      align-items: start;
+    }
+    .band-copy { display: grid; gap: 22px; }
+    .band-copy .actions { margin-top: 6px; }
+    .contact-list { display: grid; gap: 0; margin: 0; border-top: 1px solid var(--band-rule); }
+    .contact-list div { padding: 18px 0; border-bottom: 1px solid var(--band-rule); display: grid; grid-template-columns: 110px 1fr; gap: 16px; }
+    .contact-list dt { color: var(--band-muted); font-size: 0.95rem; }
+    .contact-list dd { margin: 0; }
+    .contact-list a { text-decoration: none; border-bottom: 1px solid var(--band-rule); }
+    .contact-list a:hover { border-bottom-color: var(--band-fg); }
+    .contact-list small { display: block; color: var(--band-muted); font-size: 0.9rem; }
+
+    /* Footer */
+    .site-footer { padding: 28px 0 36px; font-size: 0.88rem; color: var(--steel); }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; }
+    .site-footer a { color: var(--steel); }
+    .site-footer a:hover { color: var(--ink); }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 980px) {
+      .series { grid-template-columns: 150px 1fr; row-gap: 6px; }
+      .series-sizes { grid-column: 2; }
+      .series-link { grid-column: 2; justify-self: start; }
+    }
+
+    @media (max-width: 860px) {
+      .site-nav a.nav-link { display: none; }
+      .hero-grid, .section-head, .tech-grid, .quality-grid, .band-grid { grid-template-columns: 1fr; }
+      .credentials ul { grid-template-columns: repeat(2, 1fr); }
+      .credentials li:nth-child(3) { padding-left: 0; border-left: 0; }
+      .credentials li:nth-child(n+3) { border-top: 1px solid var(--rule); }
+    }
+
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .brand-name { display: none; }
+      .series { grid-template-columns: 1fr; }
+      .series-sizes, .series-link { grid-column: 1; }
+      .facts div, .contact-list div { grid-template-columns: 1fr; gap: 4px; }
+      .readout { flex-direction: column; gap: 4px; }
+      .actions .btn { flex: 1 1 100%; }
+      .site-nav .btn { flex: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .stream, .heat-glow { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="EPI, Eldridge Products, Inc. home">
+        <span class="brand-mark">EPI</span>
+        <span class="brand-name">Eldridge Products, Inc.</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-link" href="#products">Products</a>
+        <a class="nav-link" href="#technology">Technology</a>
+        <a class="nav-link" href="#quality">Quality</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="https://epiflow.com/support/getquote">Request a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Precise gas flow measurement, built in California since 1988.</h1>
+            <p class="lede">EPI thermal mass flow meters measure mass flow directly and aren’t thrown off by changes in line pressure. Configure one for hazardous areas, high-purity lines, extreme heat or large stacks.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://epiflow.com/allproducts">Configure a meter</a>
+              <a class="btn btn-secondary" href="https://epiflow.com/support/getquote">Request a quote</a>
+            </div>
+          </div>
+
+          <figure class="flow-figure">
+            <svg viewBox="0 0 560 360" role="img" aria-labelledby="flow-title">
+              <title id="flow-title">Gas flowing through a pipe past an EPI insertion sensor, fastest at the center of the pipe</title>
+              <defs>
+                <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0 0 L8 4 L0 8 z" fill="var(--steel)"/>
+                </marker>
+                <radialGradient id="heat" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="var(--heat)" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="var(--heat)" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Pipe walls -->
+              <rect x="0" y="112" width="560" height="16" fill="var(--pipe)"/>
+              <rect x="0" y="308" width="560" height="16" fill="var(--pipe)"/>
+
+              <!-- Velocity profile -->
+              <path d="M60 128 V308" stroke="var(--steel)" stroke-width="1" stroke-dasharray="3 4"/>
+              <path d="M60 128 Q 200 218 60 308" fill="var(--blue-soft)" stroke="var(--ink)" stroke-width="1.25"/>
+              <path d="M60 173 H108" stroke="var(--steel)" stroke-width="1" marker-end="url(#arrow)"/>
+              <path d="M60 218 H126" stroke="var(--steel)" stroke-width="1" marker-end="url(#arrow)"/>
+              <path d="M60 263 H108" stroke="var(--steel)" stroke-width="1" marker-end="url(#arrow)"/>
+
+              <!-- Flow streams: speed follows the pipe's velocity profile -->
+              <path class="stream" d="M160 140 H560" style="--d:4.8s; opacity:.5"/>
+              <path class="stream" d="M160 160 H560" style="--d:2.05s; opacity:.73"/>
+              <path class="stream" d="M160 179 H560" style="--d:1.48s; opacity:.88"/>
+              <path class="stream" d="M160 198.5 H560" style="--d:1.26s; opacity:.97"/>
+              <path class="stream" d="M160 218 H560" style="--d:1.2s"/>
+              <path class="stream" d="M160 237.5 H560" style="--d:1.26s; opacity:.97"/>
+              <path class="stream" d="M160 257 H560" style="--d:1.48s; opacity:.88"/>
+              <path class="stream" d="M160 276 H560" style="--d:2.05s; opacity:.73"/>
+              <path class="stream" d="M160 296 H560" style="--d:4.8s; opacity:.5"/>
+
+              <!-- Insertion sensor -->
+              <rect x="332" y="14" width="96" height="66" rx="8" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.5"/>
+              <rect x="346" y="28" width="68" height="24" rx="3" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="1.25"/>
+              <path d="M354 40 H372 M378 40 H406" stroke="var(--blue)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="352" cy="66" r="3" fill="var(--steel)"/>
+              <circle cx="364" cy="66" r="3" fill="var(--steel)"/>
+              <rect x="372" y="80" width="16" height="148" fill="var(--pipe)" stroke="var(--ink)" stroke-width="1.5"/>
+              <circle class="heat-glow" cx="376" cy="238" r="16" fill="url(#heat)"/>
+              <rect x="373" y="228" width="5" height="20" rx="2" fill="var(--heat)" stroke="var(--ink)" stroke-width="1"/>
+              <rect x="382" y="228" width="5" height="20" rx="2" fill="var(--surface)" stroke="var(--ink)" stroke-width="1"/>
+            </svg>
+
+            <div class="readout" aria-hidden="true">
+              <div class="readout-main">
+                <span class="readout-label">Mass flow</span>
+                <span class="readout-value" id="flow-value">1,248.6</span>
+                <span class="readout-unit">SCFM</span>
+              </div>
+              <span class="readout-gas">Air at 70 °F</span>
+            </div>
+            <figcaption>Illustration: one sensor is heated, the other reads gas temperature. The power needed to keep them apart rises with mass flow.</figcaption>
+          </figure>
+        </div>
+
+        <div class="credentials">
+          <ul>
+            <li><strong>Since 1988</strong>Over three decades in thermal flow</li>
+            <li><strong>ISO 9001:2015</strong>Certified quality system</li>
+            <li><strong>Made in the USA</strong>Built in Marina, California</li>
+            <li><strong>10,000+ meters</strong>Sold and in service</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>A meter for every kind of gas line</h2>
+          <p class="lede">Seven series share EPI’s sensor technology. Choose by where the meter will be installed and what it needs to withstand, then configure the details online.</p>
+        </div>
+
+        <figure class="range-image">
+          <img src="https://firebasestorage.googleapis.com/v0/b/epiprofileimgs.appspot.com/o/Not_Impo_Img%2Fhomepage%2Fhero%2FEPI-All-Meters.png?alt=media&token=3c315d29-4cae-4e89-8385-c36f9992698b" alt="The EPI range of inline and insertion thermal mass flow meters" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </figure>
+
+        <ul class="series-list">
+          <li class="series">
+            <div class="series-name">HAZ<span>Hazardous locations</span></div>
+            <p class="series-desc">Explosion-proof diecast aluminum enclosure certified to CSA/CUS, ATEX, IECEx and KOSHA, with stainless steel wetted parts.</p>
+            <p class="series-sizes">Inline 1/4–4"<br>Insertion 1 1/2" and up</p>
+            <a class="series-link" href="https://epiflow.com/allproducts/haz">View HAZ meters</a>
+          </li>
+          <li class="series">
+            <div class="series-name">GEN<span>General locations</span></div>
+            <p class="series-desc">Corrosion-resistant, watertight enclosure for ordinary, non-hazardous locations. CSA/CUS approved.</p>
+            <p class="series-sizes">Inline 1/4–4"<br>Insertion 1 1/2" and up</p>
+            <a class="series-link" href="https://epiflow.com/allproducts/gen">View GEN meters</a>
+          </li>
+          <li class="series">
+            <div class="series-name">VAL<span>High value</span></div>
+            <p class="series-desc">The same accurate sensor at a lower cost, for applications that don’t need advanced features.</p>
+            <p class="series-sizes">Inline 1/4–4"<br>Insertion 1 1/2" and up</p>
+            <a class="series-link" href="https://epiflow.com/allproducts/val">View VAL meters</a>
+          </li>
+          <li class="series">
+            <div class="series-name">PURE<span>High purity</span></div>
+            <p class="series-desc">Engineered for ultra high-purity gas lines, in explosion-proof or NEMA 4X (IP66) enclosures.</p>
+            <p class="series-sizes">Inline 1/4–4"</p>
+            <a class="series-link" href="https://epiflow.com/allproducts/pure">View PURE meters</a>
+          </li>
+          <li class="series">
+            <div class="series-name">XT<span>High temperature</span></div>
+            <p class="series-desc">Measures gas flow in extreme process temperatures, with optional remote electronics.</p>
+            <p class="series-sizes">Insertion 1 1/2" and up</p>
+            <a class="series-link" href="https://epiflow.com/allproducts/xt">View XT meters</a>
+          </li>
+          <li class="series">
+            <div class="series-name">MULTIGEN<span>Multi-point</span></div>
+            <p class="series-desc">Several sensor assemblies feed one remote control panel for accurate readings across large pipes, ducts and stacks.</p>
+            <p class="series-sizes">Insertion 2" and up</p>
+            <a class="series-link" href="https://epiflow.com/products/multigen/insertion/multigen">View MULTIGEN</a>
+          </li>
+          <li class="series">
+            <div class="series-name">SWITCH<span>Flow switch</span></div>
+            <p class="series-desc">Monitors gas flow and trips at your set point, in an explosion-proof enclosure.</p>
+            <p class="series-sizes">Inline 1/4–4"<br>Insertion 1 1/2" and up</p>
+            <a class="series-link" href="https://epiflow.com/products/switch/inline/gen">View SWITCH</a>
+          </li>
+        </ul>
+
+        <div class="custom-note">
+          <p>Need a configuration you don’t see? EPI builds custom meters for most application requirements.</p>
+          <a class="btn btn-secondary" href="https://epiflow.com/support/getquote">Ask about a custom meter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="section tech" id="technology">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How an EPI meter measures flow</h2>
+          <p class="lede">Two pieces of engineering do the work: a matched pair of platinum sensors, and a patented tube that averages flow across the whole pipe.</p>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-item">
+            <svg viewBox="0 0 440 150" aria-hidden="true">
+              <rect x="0" y="40" width="440" height="70" rx="2" fill="var(--blue-soft)"/>
+              <path d="M10 62 H430 M10 88 H430" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="18 10" opacity=".7"/>
+              <rect x="180" y="20" width="22" height="80" rx="3" fill="var(--heat)" stroke="var(--ink)" stroke-width="1.25"/>
+              <rect x="238" y="20" width="22" height="80" rx="3" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/>
+              <text x="191" y="134" text-anchor="middle" font-family="Archivo, sans-serif" font-size="13" fill="var(--steel)">Heated</text>
+              <text x="249" y="134" text-anchor="middle" font-family="Archivo, sans-serif" font-size="13" fill="var(--steel)">Reference</text>
+            </svg>
+            <h3>Thermal mass sensing</h3>
+            <p>Each sensor uses two ratiometrically matched, reference-grade platinum RTDs sheathed in 316 stainless steel, or Hastelloy C when needed. One is heated; the other tracks gas temperature. As gas carries heat away, the power needed to hold the difference rises in proportion to mass flow, so the reading is true mass flow, not volume.</p>
+            <a class="tech-link" href="https://epiflow.com/technicalinfo/fullguideflowmeters">Read the full guide to flow meters</a>
+          </article>
+
+          <article class="tech-item">
+            <svg viewBox="0 0 440 150" aria-hidden="true">
+              <rect x="0" y="20" width="440" height="110" rx="2" fill="var(--blue-soft)"/>
+              <rect x="205" y="10" width="30" height="130" rx="15" fill="var(--surface)" stroke="var(--ink)" stroke-width="1.25"/>
+              <circle cx="220" cy="38" r="5" fill="var(--paper)" stroke="var(--ink)"/>
+              <circle cx="220" cy="62" r="5" fill="var(--paper)" stroke="var(--ink)"/>
+              <circle cx="220" cy="88" r="5" fill="var(--paper)" stroke="var(--ink)"/>
+              <circle cx="220" cy="112" r="5" fill="var(--paper)" stroke="var(--ink)"/>
+              <path d="M30 38 H195 M30 62 H195 M30 88 H195 M30 112 H195" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="18 10" opacity=".7"/>
+              <path d="M250 75 H420" stroke="var(--blue)" stroke-width="2" stroke-dasharray="18 10"/>
+            </svg>
+            <h3>Flow Averaging Tube™</h3>
+            <p>A row of inlet ports along the probe samples flow at several points across the pipe. The pressure from each port is averaged inside the tube, so the sensor sees the true average flow. In many systems the upstream straight run can drop to as little as three pipe diameters, which helps where space is tight.</p>
+            <a class="tech-link" href="https://epiflow.com/technicalinfo">Explore EPI technology</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality -->
+    <section class="section" id="quality">
+      <div class="wrap quality-grid">
+        <figure class="quality-photo">
+          <img src="https://firebasestorage.googleapis.com/v0/b/epiprofileimgs.appspot.com/o/Not_Impo_Img%2Fhomepage%2FFeature%2Fhigh-standard-quality-control-flow-meters.png?alt=media&token=a0dc5bce-9914-44ab-b2d3-830492987a33" alt="EPI flow meters lined up for inspection" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </figure>
+        <div class="quality-copy">
+          <h2>Made, tested and calibrated in Marina, California</h2>
+          <p>Every EPI meter is built by experienced specialists in the United States and goes through extensive testing and calibration before it’s signed off and shipped.</p>
+          <dl class="facts">
+            <div>
+              <dt>Calibrated for your gas</dt>
+              <dd>Calibration specialists use a range of gases to match the conditions of your process line.</dd>
+            </div>
+            <div>
+              <dt>Live zero validation</dt>
+              <dd>Check the meter’s calibration in the field, without removing it from the line.</dd>
+            </div>
+            <div>
+              <dt>Ten years of support</dt>
+              <dd>Technical and remote help from EPI’s own team for a decade after purchase.</dd>
+            </div>
+            <div>
+              <dt>Warranty included</dt>
+              <dd>One year on every meter, with extended coverage available when you configure.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section testimonial" aria-label="Customer feedback">
+      <div class="wrap">
+        <blockquote class="quote">
+          <p>“We use the air flow meter to measure and achieve a specific air-to-water treatment ratio, with air flows of up to 4,000 SCFM. It has functioned with minimal fluctuation in measurements, and we’ve had a good experience with the FAT probe at our treatment plant.”</p>
+          <footer><cite>J. Raul Ramirez</cite>, Tetra Tech Inc.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section band" id="contact">
+      <div class="wrap band-grid">
+        <div class="band-copy">
+          <h2>Tell us about your application.</h2>
+          <p class="lede">Share your gas, line size and operating conditions, and EPI’s team will recommend and quote the right meter.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://epiflow.com/support/getquote">Request a quote</a>
+            <a class="btn btn-secondary" href="https://epiflow.com/allproducts">Configure a meter</a>
+          </div>
+        </div>
+        <dl class="contact-list">
+          <div>
+            <dt>Call</dt>
+            <dd><a href="tel:+18003213569">1-800-321-FLOW</a><small>or 831-648-7777</small></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:sales@epiflow.com">sales@epiflow.com</a><small>Technical support: episupport@epiflow.com</small></dd>
+          </div>
+          <div>
+            <dt>Visit</dt>
+            <dd>465 Reservation Road, Marina, CA 93933<small>Monday to Friday. Please call ahead to schedule a visit.</small></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Eldridge Products, Inc. Proudly designed and manufactured in the USA.</p>
+      <p><a href="https://epiflow.com">epiflow.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      var valueEl = document.getElementById('flow-value');
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!valueEl || reduceMotion) return;
+
+      var value = 1248.6;
+      var target = value;
+      var format = function (n) {
+        return n.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+      };
+
+      setInterval(function () {
+        if (Math.random() < 0.2) target = 1238 + Math.random() * 22;
+        value += (target - value) * 0.3 + (Math.random() - 0.5) * 0.5;
+        valueEl.textContent = format(value);
+      }, 700);
+    })();
+  </script>
+</body>
+</html>
